@@ -1,0 +1,29 @@
+// Mixins
+
+@mixin boxSizing($prop){
+	-webkit-box-sizing: $prop;
+	-moz-box-sizing: $prop;
+	box-sizing: $prop;
+}
+@mixin transition($prop...){
+	-webkit-transition: $prop;
+	-moz-transition: $prop;
+	-ms-transition: $prop;
+	-o-transition: $prop;
+	transition: $prop;
+}
+@mixin transform($prop...){
+	-webkit-transform: $prop;
+	-moz-transform: $prop;
+	-ms-transform: $prop;
+	-o-transform: $prop;
+	transform: $prop;
+}
+
+@mixin bgCover($url:'') {
+	background-image: url(#{$url});
+	// background-image: url(unquote($url));
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

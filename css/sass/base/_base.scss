@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $color;
+	min-width: $layoutWidth;
+	line-height: 1.5;
+	background: url(../img/site-bg.png) repeat;
+}
+* {
+	@include boxSizing(border-box);
+}
+main {
+	display: block;
+}
+button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+}
+.container {
+	margin: 0 auto;
+	width: $layoutWidth;
+}
+
+
+// colors
+.orange {
+	color: $orange;
+}
+
+
+
+// typeography
+h1, h2, h3, h4, h5, h6 {
+	&:first-child {
+		margin-top: 0;
+	}
+}
+h4, h5, h6 {
+	font-weight: 400;
+}
+p {
+	margin-top: 0;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.fsXs {
+	font-size: $fontSize - 4px;
+}
+.fsSm {
+	font-size: $fontSize - 2px;
+}
+.fsNorm {
+	font-size: $fontSize;
+}
+.fsMd {
+	font-size: $fontSize + 2px;
+}
+.fsLg {
+	font-size: $fontSize + 4px;
+}
+.fsXl {
+	font-size: $fontSize + 6px;
+}
+.alignL {
+	text-align: left;
+}
+.alignC {
+	text-align: center;
+}
+.alignR {
+	text-align: right;
+}
+
+
+// icons
+[class^="icon-"], 
+[class*=" icon-"] {
+	vertical-align: middle;
+    line-height: .7em;
+    display: inline-block;
+	&.sm {
+		font-size: 16px;
+	}
+	&.md {
+		font-size: 26px;
+	}
+	&.lg {
+		font-size: 52px;
+	}
+	+ * {
+		vertical-align: middle;
+	}
+}
+
+
+
+.pageSection {
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+.sectTitle {
+	text-align: center;
+	position: relative;
+	margin-bottom: 120px;
+	&:after, &:before {
+		content: '';
+		display: inline-block;
+		width: 1px;
+		height: 42px;
+		background: transparentize($semidark,.5);
+		position: absolute;
+		margin-top: 30px;
+		top: 100%;
+	}
+	&:after {
+		@include transform(rotate(45deg));
+	}
+	&:before {
+		@include transform(rotate(-45deg));
+	}
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: $fontSize + 4px;
+		font-weight: 300; 
+		color: #fff;
+	}
+	p {
+		max-width: 680px;
+		margin: 0 auto;
+		color: $semidark;
+		line-height: 1.5em;
+	}
+}
+
+.textHeading {
+	color: $orange;
+	font-size: $fontSize + 4px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
+	span {
+		display: inline-block;
+		// line-height: 1.2;
+	}
+}
+
+.bgCover {
+	@include bgCover();
+}
+.imgDivider {
+	@include bgCover();
+	padding: 140px 0;
+	h4 {
+		font-size: $fontSize + 6px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-weight: 400;
+		text-align: center;
+		max-width: 850px;
+		margin: 0 auto;
+		margin-bottom: 0;
+		font-weight: 300;
+		color: $grey;
+	}
+}
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

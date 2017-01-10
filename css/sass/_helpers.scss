@@ -1,0 +1,101 @@
+
+/* margin and padding spaces */
+$mtStep: 0;
+@while $mtStep <= 150 {
+	.m#{$mtStep} {
+		margin: #{$mtStep}px;
+	}
+	.p#{$mtStep} {
+		padding: #{$mtStep}px;
+	}
+	$mtStep: $mtStep + 5;
+}
+$mtStep: 0;
+@while $mtStep <= 150 {
+	.mt#{$mtStep} {
+		margin-top: #{$mtStep}px;
+	}
+	.pt#{$mtStep} {
+		padding-top: #{$mtStep}px;
+	}
+	$mtStep: $mtStep + 5;
+}
+$mbStep: 0;
+@while $mbStep <= 150 {
+	.mb#{$mbStep} {
+		margin-bottom: #{$mbStep}px;
+	}
+	.pb#{$mbStep} {
+		padding-bottom: #{$mbStep}px;
+	}
+	$mbStep: $mbStep + 5;
+}
+$mlStep: 0;
+@while $mlStep <= 150 {
+	.ml#{$mlStep} {
+		margin-left: #{$mlStep}px;
+	}
+	.pl#{$mlStep} {
+		padding-left: #{$mlStep}px;
+	}
+	$mlStep: $mlStep + 5;
+}
+$mrStep: 0;
+@while $mrStep <= 150 {
+	.mr#{$mrStep} {
+		margin-right: #{$mrStep}px;
+	}
+	.pr#{$mrStep} {
+		padding-right: #{$mrStep}px;
+	}
+	$mrStep: $mrStep + 5;
+}
+.hasPadTB {
+	padding: 50px 0;
+}
+.noMargin {
+	margin: 0;
+}
+.noMarginR {
+	margin-right: 0;
+}
+.noMarginL {
+	margin-left: 0;
+}
+.noMarginT {
+	margin-top: 0;
+}
+.noMarginB {
+	margin-bottom: 0;
+}
+.noPadding {
+	padding: 0;
+}
+.noPaddingR {
+	padding-right: 0;
+}
+.noPaddingL {
+	padding-left: 0;
+}
+.noPaddingT {
+	padding-top: 0;
+}
+.noPaddingB {
+	padding-bottom: 0;
+}
+.noBorder {
+	border: none;
+}
+.noBorderR {
+	border-right: none;
+}
+.noBorderL {
+	border-left: none;
+}
+.noBorderT {
+	border-top: none;
+}
+.noBorderB {
+	border-bottom: none;
+}
+/* end margin and adding spaces */

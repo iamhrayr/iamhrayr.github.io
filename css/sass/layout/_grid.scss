@@ -1,0 +1,26 @@
+/* grid system */
+.colRow {
+	margin-right: -10px;
+	margin-left: -10px;
+	>div {
+		margin-bottom: 15px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	@for $i from $colCount through 1 {
+		.#{col}#{$i} {
+			width: (100% / $colCount) * $i;
+			padding: 0 10px;
+			float: left;
+		}
+	}
+	@for $i from $colCount through 0 {
+		.#{offset}#{$i} {
+			margin-left: (100% / $colCount) * $i;
+		}
+	}
+}
+/* end grid system */
