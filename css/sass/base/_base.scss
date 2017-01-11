@@ -150,6 +150,14 @@ p {
 	}
 }
 
+hr {
+	width: 100%;
+	height: 1px;
+	border: none;
+	background: #3a3a3a;
+}
+
+
 .textHeading {
 	color: $orange;
 	font-size: $fontSize + 4px;
@@ -161,6 +169,7 @@ p {
 		// line-height: 1.2;
 	}
 }
+
 
 .bgCover {
 	@include bgCover();

@@ -541,6 +541,12 @@ p {
     color: #676767;
     line-height: 1.5em; }
 
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: #3a3a3a; }
+
 .textHeading {
   color: #ce710e;
   font-size: 20px;
