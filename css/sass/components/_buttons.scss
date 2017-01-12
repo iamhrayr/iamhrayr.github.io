@@ -1,0 +1,33 @@
+// button styles 
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	color: $color;
+    padding: 11px 50px;
+	text-align: center;
+	border-radius: 100px;
+	border: solid 1px transparent;
+	line-height: 1;
+	letter-spacing: 1px;
+
+	// button styles 
+	&.outline {
+		border-color: $color;
+	}
+
+	// button sizes
+	&.sm {
+		padding: 5px 25px;
+	}
+	&.md {
+		padding: 15px 70px;
+		font-weight: 300;
+		font-size: $fontSize + 2px;
+	}
+	&.lg {
+		padding: 19px 100px;
+		font-weight: 300;
+		font-size: $fontSize + 6px;
+	}
+
+}

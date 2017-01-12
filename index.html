@@ -6,13 +6,15 @@
 
 
 	<!-- include css files -->
-	<link rel="stylesheet" href="css/tilteffect.css">
 	<link rel="stylesheet" href="https://file.myfontastic.com/y6dKf8i7jugHXqYtxSVuPH/icons.css">
+	<link rel="stylesheet" href="css/tilteffect.css">
+	<link rel="stylesheet" href="css/asPieProgress.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- include js files -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="js/jquery-asPieProgress.js"></script>
 	<script src="js/tiltfx.js"></script>
 	<script src="js/main.js"></script>
 </head>
@@ -31,7 +33,7 @@
 					</button>
 				</div>
 			</div>
-			<img src="./img/hero.jpg" class="tilt-effect"/>
+			<!-- <img src="./img/hero.jpg" class="tilt-effect"/> -->
 		</section>
 		<section class="pageSection">
 			<div class="container">
@@ -170,16 +172,59 @@
 					<h2>MY <span class="orange">Skills</span></h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
 				</div>
-				<div class="colRow">
-					<div class="col4">
-						
+				<div class="colRow homeProgresses">
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="78" data-barcolor="#3a8fcc">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>PHOTOSHOP</h5>
+					</div>
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="71" data-barcolor="#bbce60">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>ILLUSTRATOR</h5>
+					</div>
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="85" data-barcolor="#48b576">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>HTML</h5>
+					</div>
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="83" data-barcolor="#ca8d24">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>CSS/SASS</h5>
+					</div>
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="63" data-barcolor="#b749cf">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>JavaScript</h5>
+					</div>
+					<div class="col2">
+						<div class="pie_progress" role="progressbar" data-goal="79" data-barcolor="#d35151">
+							<div class="pie_progress__number">0%</div>
+						</div>
+						<h5>BOOTSTRAP</h5>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="pageSection darkBg uniqueDesSection">
+			<div class="sectTitle">
+				<h2>UNIQUE <span class="orange">DESIGNS</span> FOR YOUR BUSINESS</h2>
+			</div>
+			<div class="uniqueDesign">
+				<img src="img/unique-design-img.png" alt="">
+				<div class="uniqueDesignTxt">
+					<h3 class="uppercase">It's high time to visit my portfolio</h3>
+					<a href="#" class="btn outline white lg">LETS GO</a>
+				</div>
+			</div>
+		</section>
 	</main>
-	
-	
 
 </body>
 </html>

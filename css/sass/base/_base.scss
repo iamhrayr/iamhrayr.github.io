@@ -30,11 +30,18 @@ a {
 	margin: 0 auto;
 	width: $layoutWidth;
 }
+img {
+	vertical-align: middle; /* remove whitespace */
+	max-width: 100%;
+}
 
 
 // colors
 .orange {
 	color: $orange;
+}
+.darkBg {
+	background-color: $dark;
 }
 
 
@@ -44,8 +51,15 @@ h1, h2, h3, h4, h5, h6 {
 	&:first-child {
 		margin-top: 0;
 	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+h1, h2, h3 {
+	letter-spacing: 4px;
 }
 h4, h5, h6 {
+	letter-spacing: 2px;
 	font-weight: 400;
 }
 p {
@@ -137,7 +151,7 @@ p {
 	}
 	h2 {
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 4px;
 		font-size: $fontSize + 4px;
 		font-weight: 300; 
 		color: #fff;
@@ -170,28 +184,13 @@ hr {
 	}
 }
 
-
 .bgCover {
 	@include bgCover();
 }
-.imgDivider {
-	@include bgCover();
-	padding: 140px 0;
-	h4 {
-		font-size: $fontSize + 6px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		font-weight: 400;
-		text-align: center;
-		max-width: 850px;
-		margin: 0 auto;
-		margin-bottom: 0;
-		font-weight: 300;
-		color: $grey;
-	}
-}
+
 .list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+

@@ -435,27 +435,13 @@ a {
   margin: 0 auto;
   width: 1030px; }
 
-img {
-  vertical-align: middle;
-  /* remove whitespace */
-  max-width: 100%; }
-
 .orange {
   color: #ce710e; }
 
-.darkBg {
-  background-color: #272727; }
-
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
   margin-top: 0; }
-h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
-  margin-bottom: 0; }
-
-h1, h2, h3 {
-  letter-spacing: 4px; }
 
 h4, h5, h6 {
-  letter-spacing: 2px;
   font-weight: 400; }
 
 p {
@@ -545,7 +531,7 @@ p {
     transform: rotate(-45deg); }
   .sectTitle h2 {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-size: 20px;
     font-weight: 300;
     color: #fff; }
@@ -576,10 +562,35 @@ hr {
   background-position: center;
   background-repeat: no-repeat; }
 
+.imgDivider {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0; }
+  .imgDivider h4 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-weight: 300;
+    color: #c6c5c5; }
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.progress {
+  height: 100px; }
+
+.progress > svg {
+  height: 100%;
+  display: block; }
 
 /* grid system */
 .colRow {
@@ -667,29 +678,6 @@ hr {
     margin-left: 0%; }
 
 /* end grid system */
-.btn {
-  cursor: pointer;
-  text-decoration: none;
-  color: #9f9f9f;
-  padding: 11px 50px;
-  text-align: center;
-  border-radius: 100px;
-  border: solid 1px transparent;
-  line-height: 1;
-  letter-spacing: 1px; }
-  .btn.outline {
-    border-color: #9f9f9f; }
-  .btn.sm {
-    padding: 5px 25px; }
-  .btn.md {
-    padding: 15px 70px;
-    font-weight: 300;
-    font-size: 18px; }
-  .btn.lg {
-    padding: 19px 100px;
-    font-weight: 300;
-    font-size: 22px; }
-
 /* margin and padding spaces */
 .m0 {
   margin: 0px; }
@@ -1781,57 +1769,5 @@ hr {
 
 .serviceDescr {
   display: none; }
-
-.homeProgresses {
-  opacity: .6; }
-  .homeProgresses .pie_progress {
-    width: 100px;
-    margin: 0 auto; }
-  .homeProgresses .pie_progress__number {
-    font-size: 22px;
-    color: #fff;
-    font-weight: 300; }
-  .homeProgresses h5 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    letter-spacing: 3px;
-    text-align: center;
-    margin-top: 15px; }
-
-.imgDivider {
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 140px 0; }
-  .imgDivider h4 {
-    font-size: 22px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    font-weight: 300;
-    color: #c6c5c5; }
-
-.uniqueDesSection {
-  background-color: #272727;
-  position: relative;
-  padding-bottom: 0; }
-
-.uniqueDesign {
-  text-align: center; }
-  .uniqueDesign h3 {
-    font-size: 22px;
-    letter-spacing: 3px;
-    font-weight: 300; }
-
-.uniqueDesignTxt {
-  background: url(../img/site-bg.png) repeat;
-  padding: 122px 0;
-  margin-top: -120px; }
 
 /*# sourceMappingURL=main.css.map */

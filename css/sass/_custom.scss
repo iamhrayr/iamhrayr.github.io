@@ -130,3 +130,61 @@
 .serviceDescr {
 	display: none;
 }
+
+// Circle Progress Bars
+.homeProgresses {
+	opacity: .6;
+	.pie_progress {
+		width: 100px;
+		margin: 0 auto;
+	}
+	.pie_progress__number {
+		font-size: $fontSize + 6px;
+		color: #fff;
+		font-weight: 300;
+	}
+	h5 {
+		font-size: $fontSize + 2px;
+		font-weight: 300;
+		color: #fff;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+
+.imgDivider {
+	@include bgCover();
+	padding: 140px 0;
+	h4 {
+		font-size: $fontSize + 6px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-weight: 400;
+		text-align: center;
+		max-width: 850px;
+		margin: 0 auto;
+		margin-bottom: 0;
+		font-weight: 300;
+		color: $grey;
+	}
+}
+
+.uniqueDesSection {
+	background-color: $dark;
+	position: relative;
+	padding-bottom: 0;
+}
+.uniqueDesign {
+	text-align: center;
+	h3 {
+		font-size: $fontSize + 6px;
+		letter-spacing: 3px;
+	    font-weight: 300;
+	}
+}
+.uniqueDesignTxt {
+	background: url(../img/site-bg.png) repeat;
+	padding: 122px 0;
+	margin-top: -120px;
+}
