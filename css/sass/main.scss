@@ -1,15 +1,53 @@
-@import 'vendor/_normilize.scss';
-@import 'vendor/_mixins.scss';
-@import 'vendor/_variables.scss';
+// Collect all partials together
+@import 'utils/main';
+@import 'base/main';
+@import 'layout/main';
+@import 'components/main';
+@import 'pages/main';
+@import 'helpers/helpers';
 
-@import 'base/_base.scss';
 
-@import 'layout/_grid.scss';
 
-@import 'components/_buttons.scss';
-@import 'components/_forms.scss';
 
-@import '_helpers.scss';
-@import '_custom.scss';
+
+
+
+// @import 'vendor/normilize.scss';
+// @import 'vendor/mixins.scss';
+// @import 'vendor/variables.scss';
+
+// @import 'base/base.scss';
+
+// @import 'layout/grid.scss';
+
+// @import 'components/buttons.scss';
+// @import 'components/forms.scss';
+
+// @import 'helpers.scss';
+// @import 'custom.scss';
+
+
+
+
+// @mixin bubu {
+// 	border-radius: 15px;
+// }
+
+// @mixin bubu {
+// 	.lala {
+// 		@content;
+// 	}
+// }
+
+
+
+// @include bubu {
+// 	h6 {
+// 		color: red;	
+// 	}
+// 	h3 {
+// 		color: green;
+// 	}
+// }
 
 
