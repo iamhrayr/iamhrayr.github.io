@@ -719,7 +719,8 @@ footer {
 .heroTxtInner {
   font-size: 100px;
   transform-origin: 0 0;
-  position: relative; }
+  position: relative;
+  float: left; }
   .heroTxtInner h1, .heroTxtInner h2, .heroTxtInner h5 {
     margin: 0 0 10px;
     color: #fff;
@@ -738,6 +739,14 @@ footer {
     font-size: .28em;
     margin-bottom: 0;
     padding-left: .2em; }
+
+.navWrapp {
+  float: right;
+  font-size: 34px;
+  color: #ce710e; }
+  .navWrapp button {
+    color: inherit;
+    pointer-events: initial; }
 
 .tilt__front {
   -webkit-transition: transform 0.15s;

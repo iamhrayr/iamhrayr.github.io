@@ -30,6 +30,7 @@
 	font-size: 100px;
 	transform-origin: 0 0;
 	position: relative;
+	float: left;
 	h1, h2, h5 {
 		margin: 0 0 10px;
 		color: #fff;
@@ -53,6 +54,15 @@
 		font-size: .28em;
 		margin-bottom: 0;
 		padding-left: .2em;
+	}
+}
+.navWrapp {
+	float: right;
+	font-size: 34px;
+	color: $orange;
+	button {
+		color: inherit;
+		pointer-events: initial;
 	}
 }
 .tilt__front {
