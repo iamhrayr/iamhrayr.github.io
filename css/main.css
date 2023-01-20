@@ -816,13 +816,26 @@ footer {
  * Home page
  */
 .heroWrap {
-  height: 650px;
+  height: 100vh;
   position: relative; }
   .heroWrap .tilt {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 0; }
+
+.socialLinks {
+  display: flex;
+  margin-top: 300px;
+  pointer-events: all;
+  flex-direction: row;}
+  .socialLinks a {
+    cursor: pointer;
+    margin-right: 10px;}
+    .socialLinks a:hover {
+      opacity: 0.8;}
+  .socialLinks img {
+    width: 44px;}
 
 .heroTxt {
   position: relative;
@@ -837,8 +850,7 @@ footer {
   font-size: 100px;
   transform-origin: 0 0;
   position: relative;
-  line-height: .7;
-  float: left; }
+  line-height: .7;}
   .heroTxtInner h1, .heroTxtInner h2, .heroTxtInner h5 {
     margin: 0 0 10px;
     color: #fff;
@@ -1034,7 +1046,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #151515;
   z-index: 999; }
   .pace.pace-inactive .pace-progress {
     display: none; }

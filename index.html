@@ -1,308 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>IAMHRAYR => Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>iamhrayr</title>
 
+    <!-- include css files -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/tilteffect.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-	<!-- include css files -->
-	<link rel="stylesheet" href="https://file.myfontastic.com/y6dKf8i7jugHXqYtxSVuPH/icons.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/tilteffect.css">
-	<link rel="stylesheet" href="css/asPieProgress.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/main.css">
+    <!-- include js files -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-asPieProgress.js"></script>
+    <script src="./js/tiltfx.js"></script>
+    <script src="./js/skrollr.js"></script>
+    <script src="./js/pace.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="heroWrap">
+        <div
+          class="heroTxt"
+          data-0="position: fixed;"
+          data-100="padding-top: 120px;"
+          data-250="background-color: rgba(30,30,30,0); padding-top: 50px;"
+          data-300="padding-top: 15px;"
+          data-500="background-color: rgba(30,30,30,1);"
+        >
+          <div class="container">
+            <div
+              class="heroTxtInner"
+              data-100="font-size: 100px"
+              data-400="font-size: 30px;"
+            >
+              <h2
+                class="wow fadeInDown"
+                data-wow-delay="0"
+                data-wow-duration="3s"
+                data-0="opacity: 1;"
+                data-200="margin-top: 0em;"
+                data-300="opacity: 0;"
+                data-400="margin-top: -1em;"
+              >
+                HOWDY
+              </h2>
+              <h1
+                class="wow fadeInDown"
+                data-wow-delay="0.6s"
+                data-wow-duration="3s"
+              >
+                I<span class="orange">AM</span>HRAYR
+              </h1>
+              <h5
+                class="wow fadeInDown"
+                data-wow-delay="1.2s"
+                data-wow-duration="3s"
+              >
+                A SOFTWARE ENGINEER
+              </h5>
+            </div>
 
-	<!-- include js files -->
-	<script src="js/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/TextPlugin.min.js"></script>
-	<script src="js/jquery-asPieProgress.js"></script>
-	<script src="js/tiltfx.js"></script>
-	<script src="js/skrollr.js"></script>
-	<!-- <script src="js/jquery.mousewheel.js"></script> -->
-	<script src="js/pace.js"></script>
-	<script src="js/wow.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/packery-mode.pkgd.min.js"></script>
-	<!-- <script src="js/jquery.nicescroll.js"></script> -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
-</head>
-<body>
-	<main>
-		<section class="heroWrap">
-			<div class="heroTxt" 
-				data-0="position: fixed;"
-				data-100="padding-top: 120px;"
-				data-250="background-color: rgba(30,30,30,0); padding-top: 50px;"
-				data-300="padding-top: 15px;"
-				data-500="background-color: rgba(30,30,30,1);">
-				<div class="container">
-					<div class="heroTxtInner" 
-						data-100="font-size: 100px"
-						data-400="font-size: 30px;">
-						<h2 class="wow fadeInDown" data-wow-delay="0" data-wow-duration="2.5s"
-							data-0="opacity: 1;"
-							data-200="margin-top: 0em;"
-							data-300="opacity: 0;"
-							data-400="margin-top: -1em;">HELLO</h2>
-						<h1 class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="2.5s">I<span class="orange">AM</span>HRAYR</h1>
-						<h5 class="wow fadeInDown" data-wow-delay=".6s" data-wow-duration="2.5s">WELCOME TO MY WEBSITE</h5>
-					</div>
-					<div class="navWrapp" 
-						data-300="opacity: 0;"
-						data-500="opacity: 1;">
-						<button class="navToggle"><i class="icon-bars"></i></button>
-						<nav style="display: none;">
-							<div class="container">
-								<ul class="list mt70">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Contact</a></li>
-									<li><a href="#">About me</a></li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<div class="learnMoreWrap wow fadeIn" data-wow-delay="1.2s"
-				data-0="bottom: 100px;" 
-				data-500="bottom: 30px;">
-				<div class="container">
-					<span class="learnMoreBtn"
-						data-200="transform: scale(1); opacity: 1;"
-						data-500="transform: scale(1.3); opacity: 0;">
-						<i></i>
-						<span>SCROLL TO<br>LEARN <span class="orange">MORE</span></span>
-					</span>
-				</div>
-			</div>
-			<img src="./img/hero.jpg" class="tilt-effect"/>
-		</section>
-		<section class="pageSection">
-			<div class="container">
-				<div class="sectTitle">
-					<h2 class="wow fadeInDown" data-wow-delay="" data-wow-duration="1.4s">MY <span class="orange">TOP</span> characteristics</h2>
-					<p class="wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-				</div>
-				<div class="colRow">
-					<div class="col4 wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.4s">
-						<h4 class="textHeading">
-							<i class="icon-bulb lg"></i>
-							<span>Creative</span>
-						</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud </p>
-					</div>
-					<div class="col4 wow fadeInDown" data-wow-delay=".6s" data-wow-duration="1.4s">
-						<h4 class="textHeading">
-							<i class="icon-stopwatch lg"></i>
-							<span>Punctual</span>
-						</h4>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </p>
-					</div>
-					<div class="col4 wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1.4s">
-						<h4 class="textHeading">
-							<i class="icon-ruler lg"></i>
-							<span>Pixel-attentive</span>
-						</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <section class="imgDivider" style="background-image: url('img/section-bg-1.jpg');">
-			<h4>the difference between something good and something great is attention to detail</h4>
-		</section> -->
-		<section class="imgDivider">
-			<h4 class="wow fadeIn">the difference between something good and something great is attention to detail</h4>
-			<div class="parallaxImgWrap">
-				<div class="layer" style="background-image: url(img/landscape/layer1.png);"></div>
-
-				<div class="layer" style="background-image: url(img/landscape/layer2.png);"
-				data--400-center-center="background-position: 0 105px;"
-				data-200-center-center="background-position: 0 0px;"></div>
-
-				<div class="layer" style="background-image: url(img/landscape/layer3.png);"
-				data--400-center-center="background-position: 0 -20px; background-size: 98%;"
-				data-200-center-center="background-position: 0 0px; background-size: 100%;"></div>
-
-				<div class="layer" style="background-image: url(img/landscape/layer4.png);"
-				data--400-center-center="background-position: 0 -40px;"
-				data-200-center-center="background-position: 0 0px;"></div>
-
-				<div class="layer" style="background-image: url(img/landscape/layer5.png);"
-				data--400-center-center="background-position: 0 -60px;"
-				data-200-center-center="background-position: 0 60px;"></div>
-
-				<div class="layer" style="background-image: url(img/landscape/layer6.png);"
-				data--400-center-center="background-position: 0 -85px; background-size: 100%;"
-				data-200-center-center="background-position: 0 -40px; background-size: 100%;"></div>
-			</div>
-		</section>
-		<section class="pageSection">
-			<div class="container">
-				<div class="sectTitle">
-					<h2 class="wow fadeInDown" data-wow-delay="" data-wow-duration="1.4s">MY <span class="orange">Services</span></h2>
-					<p class="wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-				</div>
-				<div class="colRow">
-					<div class="col8">
-						<div class="imacWrap wow fadeIn" data-wow-delay=".4s" data-wow-duration="1.4s">
-							<svg width="100%" height="100%" viewBox="0 0 589 472">
-								<path fill="#FFFFFF" opacity="0.4" d="M571.8,0H17.2C7.7,0,0,7.7,0,17.2v334.7v1.1v36.1c0,9.5,7.7,17.2,17.2,17.2h209.3
-									c-0.5,7.3-1.3,17.3-2.4,26.7c-3,25.6-5.3,27.9-5.7,28.1c-2.1,0.9-8.5,1.9-14.2,2.8c-10.2,1.6-11.6,1.9-11.6,2.9v1.4
-									c0,0.4,0,0.7,1.9,0.9c0,0.5,0,1.2,0,1.7c0,1.1,32.4,1.3,61.8,1.3c14.8,0,28.9,0,37.6-0.1c8.7,0,22.7,0.1,37.6,0.1
-									c29.3,0,61.8-0.2,61.8-1.3c0-0.5,0-1.2,0-1.7c1.9-0.2,1.9-0.5,1.9-0.9v-1.4c0-1-1.4-1.3-11.6-2.9c-5.7-0.9-12.1-1.9-14.2-2.8
-									c-0.4-0.2-2.7-2.4-5.7-28.1c-1.1-9.5-1.9-19.4-2.4-26.7h210.6c9.5,0,17.2-7.7,17.2-17.2V353v-1.1V17.2C589,7.7,581.3,0,571.8,0z
-									 M392.4,470.2c-1.3,0.2-5.8,0.6-20.4,0.8c-9.8,0.1-23.1,0.2-40.5,0.2c-9,0-17.6,0-25.1,0c-4.8,0-9.1,0-12.5,0c-3.4,0-7.7,0-12.5,0
-									c-7.5,0-16.1,0-25.1,0c-17.4,0-30.6-0.1-40.5-0.2c-14.7-0.2-19.2-0.6-20.4-0.8v-1c2.6,0.3,7.8,0.5,18.1,0.6
-									c10.1,0.2,24.1,0.2,42.6,0.2c9.1,0,17.8,0,25.4,0c4.8,0,9,0,12.4,0c3.4,0,7.6,0,12.4,0c7.6,0,16.3,0,25.4,0
-									c18.5,0,32.4-0.1,42.6-0.2c10.2-0.2,15.4-0.4,18.1-0.6V470.2z M362.5,433.1c3.2,27.6,5.6,28.6,6.4,29c2.2,1,8.5,1.9,14.5,2.9
-									c4.3,0.7,9.6,1.5,10.6,2v0.9c-2.7,0.7-23.6,1-62.2,1c-9.1,0-17.8,0-25.4,0c-4.8,0-9,0-12.4,0c-3.4,0-7.6,0-12.4,0
-									c-7.6,0-16.3,0-25.4,0c-38.6,0-59.5-0.4-62.2-1v-0.9c1-0.5,6.3-1.3,10.6-2c6-0.9,12.3-1.9,14.5-2.9c0.8-0.3,3.2-1.4,6.4-29
-									c1.1-9.5,2-19.5,2.4-26.8h132.5C360.6,413.6,361.4,423.6,362.5,433.1z M587.9,389.1c0,8.9-7.2,16.1-16.1,16.1H17.2
-									c-8.9,0-16.1-7.2-16.1-16.1V353h586.8V389.1z M587.9,351.9H1.1V17.2c0-8.9,7.2-16.1,16.1-16.1h554.6c8.9,0,16.1,7.2,16.1,16.1
-									V351.9z M563.8,23.5H25.2c-0.9,0-1.7,0.8-1.7,1.7v302.6c0,0.9,0.8,1.7,1.7,1.7h538.5c0.9,0,1.7-0.8,1.7-1.7V25.2
-									C565.4,24.3,564.7,23.5,563.8,23.5z M563.8,327.8H25.2V25.2h538.5V327.8z M294.5,14.6c1.2,0,2.2-1,2.2-2.2c0-1.2-1-2.2-2.2-2.2
-									c-1.2,0-2.2,1-2.2,2.2C292.3,13.6,293.3,14.6,294.5,14.6z M294.5,11.3c0.6,0,1.1,0.5,1.1,1.1c0,0.6-0.5,1.1-1.1,1.1
-									c-0.6,0-1.1-0.5-1.1-1.1C293.4,11.8,293.9,11.3,294.5,11.3z"/>
-								<g>
-									<path opacity="0.1" fill="#FFFFFF" d="M563.9,25.2H25.1v302.6h538.8V25.2"/>
-									<foreignObject width="100%" height="100%">
-										<div class="imacScreen">
-											<div id="service-1" class="serviceDescr">
-												<h4 class="textHeading">
-													<i class="icon-form lg"></i>
-													<span>WIREFRAME PROTOTYPE</span>
-												</h4>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-											</div>
-											<div id="service-2" class="serviceDescr">
-												<h4 class="textHeading">
-													<i class="icon-layer lg"></i>
-													<span>UI/UX DESIGN</span>
-												</h4>
-												<p>Recusandae omnis perferendis placeat laborum itaque, nisi consequatur dignissimos fuga! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, id facilis, non earum magni blanditiis qui eveniet temporibus ad dignissimos aliquam incidunt libero! Quo vitae harum dolor distinctio molestias, doloremque.</p>
-											</div>
-											<div id="service-3" class="serviceDescr">
-												<h4 class="textHeading">
-													<i class="icon-code lg"></i>
-													<span>CODE DEVELOP</span>
-												</h4>
-												<p>Cum laborum, repellendus iure. Amet pariatur illum, aperiam cumque, eveniet reiciendis tempora laborum, accusantium sit, deleniti optio laudantium. Corporis, laboriosam, eius. Itaque numquam praesentium porro fugiat.</p>
-											</div>
-											<div id="service-4" class="serviceDescr">
-												<h4 class="textHeading">
-													<i class="icon-code lg"></i>
-													<span>MOBILE FRIENDLY</span>
-												</h4>
-												<p>Assumenda nam possimus sequi consequatur hic, facilis iste quis alias debitis dolor animi temporibus aliquam similique inventore magni a, placeat maiores natus. Deleniti optio laudantium. Corporis, laboriosam, eius. Itaque numquam praesentium porro fugiat.</p>
-											</div>
-										</div>
-									</foreignObject>
-								</g>
-							</svg>
-						</div>
-					</div>
-					<div class="col4">
-						<ul class="list">
-							<li class="mb25 wow fadeInDown" data-wow-delay=".6s" data-wow-duration="1.4s">
-								<a href="#service-1" class="textHeading serviceOpener">
-									<i class="icon-form lg"></i>
-									<span>wireframe<br>PROTOTYPE</span>
-								</a>
-							</li>
-							<li class="mb25 wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1.4s">
-								<a href="#service-2" class="textHeading serviceOpener">
-									<i class="icon-layer lg"></i>
-									<span>UI/UX<br>DESIGN</span>
-								</a>
-							</li>
-							<li class="mb25 wow fadeInDown" data-wow-delay="1s" data-wow-duration="1.4s">
-								<a href="#service-3" class="textHeading serviceOpener">
-									<i class="icon-code lg"></i>
-									<span>CODE<br>DEVELOP</span>
-								</a>
-							</li>
-							<li class="mb25 wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="1.4s">
-								<a href="#service-4" class="textHeading serviceOpener">
-									<i class="icon-devices lg"></i>
-									<span>MOBILE<br>FRIENDLY</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<hr class="container">
-		<section class="pageSection">
-			<div class="container">
-				<div class="sectTitle">
-					<h2 class="wow fadeInDown" data-wow-delay="" data-wow-duration="1.4s">MY <span class="orange">Skills</span></h2>
-					<p class="wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-				</div>
-				<div class="colRow homeProgresses">
-					<div class="col2 wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="78" data-barcolor="#3a8fcc">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>PHOTOSHOP</h5>
-					</div>
-					<div class="col2 wow fadeInDown" data-wow-delay=".6s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="71" data-barcolor="#bbce60">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>ILLUSTRATOR</h5>
-					</div>
-					<div class="col2 wow fadeInDown" data-wow-delay=".8s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="85" data-barcolor="#48b576">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>HTML</h5>
-					</div>
-					<div class="col2 wow fadeInDown" data-wow-delay="1s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="83" data-barcolor="#ca8d24">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>CSS/SASS</h5>
-					</div>
-					<div class="col2 wow fadeInDown" data-wow-delay="1.2s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="63" data-barcolor="#b749cf">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>JavaScript</h5>
-					</div>
-					<div class="col2 wow fadeInDown" data-wow-delay="1.4s" data-wow-duration="1.4s">
-						<div class="pie_progress" role="progressbar" data-goal="79" data-barcolor="#d35151">
-							<div class="pie_progress__number">0%</div>
-						</div>
-						<h5>BOOTSTRAP</h5>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="pageSection darkBg uniqueDesSection">
-			<div class="sectTitle">
-				<h2 class="wow fadeInDown" data-wow-delay="" data-wow-duration="1.4s">UNIQUE <span class="orange">DESIGNS</span> FOR YOUR BUSINESS</h2>
-			</div>
-			<div class="uniqueDesign">
-				<img src="img/unique-design-img.png" alt="" class="wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1.4s">
-				<div class="uniqueDesignTxt">
-					<h3 class="uppercase wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.4s">It's high time to visit my portfolio</h3>
-					<a href="#" class="btn outline white lg wow fadeInDown" data-wow-delay=".6s" data-wow-duration="1.4s">LETS GO</a>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<!-- <img src="https://static.pexels.com/photos/39811/pexels-photo-39811.jpeg" alt=""> -->
-			<!-- <img src="https://static.pexels.com/photos/38136/pexels-photo-38136.jpeg" alt=""> -->
-			<!-- <img src="http://weknowyourdreams.com/images/nature/nature-04.jpg" alt=""> -->
-		</footer> 
-	</main>
-
-</body>
+            <div class="socialLinks">
+              <a
+                href="https://github.com/iamhrayr"
+                target="_blank"
+                class="wow fadeInDown"
+                data-wow-delay="1.2s"
+                ><img src="./img/socials/github.png"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/iamhrayr"
+                target="_blank"
+                class="wow fadeInDown"
+                data-wow-delay="1.4s"
+                ><img src="./img/socials/linkedin.png"
+              /></a>
+              <a
+                href="https://twitter.com/iamhrayr"
+                target="_blank"
+                class="wow fadeInDown"
+                data-wow-delay="1.6s"
+                ><img src="./img/socials/twitter.png"
+              /></a>
+              <a
+                href="https://t.me/iamhrayr"
+                target="_blank"
+                class="wow fadeInDown"
+                data-wow-delay="1.8s"
+                ><img src="./img/socials/telegram.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <img src="./img/hero.jpg" class="tilt-effect" />
+      </section>
+    </main>
+  </body>
 </html>
