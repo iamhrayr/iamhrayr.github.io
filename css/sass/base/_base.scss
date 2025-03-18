@@ -4,7 +4,6 @@ body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
 	color: $color;
-	min-width: $layoutWidth;
 	line-height: 1.5;
 	background: url(../img/site-bg.png) repeat;
 }
@@ -30,6 +29,7 @@ a {
 .container {
 	margin: 0 auto;
 	width: $layoutWidth;
+	max-width: 100%;
 	padding: 0 30px;
 	&:after {
 		content: '';

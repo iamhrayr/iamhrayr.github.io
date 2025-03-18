@@ -407,7 +407,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #9f9f9f;
-  min-width: 1030px;
   line-height: 1.5;
   background: url(../img/site-bg.png) repeat; }
 
@@ -433,6 +432,7 @@ a {
 
 .container {
   margin: 0 auto;
+  max-width: 100%;
   width: 1030px; }
 
 img {
