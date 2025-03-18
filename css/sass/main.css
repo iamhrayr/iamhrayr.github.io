@@ -732,7 +732,7 @@ footer {
     position: relative; }
 
 .heroTxtInner {
-  font-size: 100px;
+  font-size: min(13vw, 100px);
   transform-origin: 0 0;
   position: relative;
   float: left; }
