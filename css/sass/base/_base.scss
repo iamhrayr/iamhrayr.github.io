@@ -30,6 +30,7 @@ a {
 .container {
 	margin: 0 auto;
 	width: $layoutWidth;
+	padding: 0 30px;
 	&:after {
 		content: '';
 		display: table;

@@ -434,7 +434,8 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1030px; }
+  width: 1030px;
+  padding: 0 30px; }
   .container:after {
     content: '';
     display: table;
@@ -850,7 +851,7 @@ footer {
   font-size: 100px;
   transform-origin: 0 0;
   position: relative;
-  line-height: .7;}
+  line-height: .8;}
   .heroTxtInner h1, .heroTxtInner h2, .heroTxtInner h5 {
     margin: 0 0 10px;
     color: #fff;
